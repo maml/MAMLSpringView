@@ -29,7 +29,7 @@
         offText = _offText;
         onColor = _onColor;
         offColor = _offColor;
-        self.text = @"Off";
+        self.text = offText;
         self.textColor = [UIColor lightGrayColor];
         self.font = [UIFont systemFontOfSize:12];
         self.textAlignment = NSTextAlignmentCenter;
