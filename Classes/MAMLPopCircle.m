@@ -32,7 +32,7 @@
         
         // Sets up the circle with respect to the frame within which it's initialized
         shapeLayer = [CAShapeLayer layer];
-        shapeLayer.strokeColor = [[UIColor lightGrayColor] CGColor];
+        shapeLayer.strokeColor = offColor;
         shapeLayer.fillColor = [[UIColor clearColor] CGColor];
         
         CGFloat midX = CGRectGetMidX(self.bounds);
