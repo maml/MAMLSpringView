@@ -16,6 +16,23 @@
 #import "MAMLPopCircle.h"
 #import "MAMLPopLabel.h"
 
+typedef NS_ENUM(NSInteger, ViewState) {
+    ViewStateOff,
+    ViewStateOn
+};
+
+@protocol MAMLSpringViewDelegate;
+
 @interface MAMLPopContainerView : UIView
+
+@property (assign) id<MAMLSpringViewDelegate> delegate;
+
+@end
+
+@protocol MAMLSpringViewDelegate <NSObject>
+
+@optional
+
+- (void)springViewStateDidChange:(ViewState)state;
 
 @end

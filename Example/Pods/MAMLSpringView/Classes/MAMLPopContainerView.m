@@ -8,11 +8,6 @@
 
 #import "MAMLPopContainerView.h"
 
-typedef NS_ENUM(NSInteger, ViewState) {
-    ViewStateOff,
-    ViewStateOn
-};
-
 @interface MAMLPopContainerView ()
 
 @property (strong, nonatomic) MAMLPopCircle *circle;
@@ -28,7 +23,7 @@ typedef NS_ENUM(NSInteger, ViewState) {
 
 @implementation MAMLPopContainerView
 
-@synthesize circle, label, offColor, offText, onColor, onText, state;
+@synthesize circle, delegate, label, offColor, offText, onColor, onText, state;
 
 - (void)awakeFromNib
 {
@@ -55,6 +50,8 @@ typedef NS_ENUM(NSInteger, ViewState) {
         [label setState:LabelStateOff];
         state = ViewStateOff;
     }
+
+    [delegate springViewStateDidChange:state];
 }
 
 @end
