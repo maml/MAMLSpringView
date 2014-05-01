@@ -23,7 +23,6 @@
 		C9A5167E1911DAAA005F198B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A516601911DAAA005F198B /* UIKit.framework */; };
 		C9A516861911DAAA005F198B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9A516841911DAAA005F198B /* InfoPlist.strings */; };
 		C9A516881911DAAA005F198B /* MAMLSpringViewExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A516871911DAAA005F198B /* MAMLSpringViewExTests.m */; };
-		D07D0E036D074510AD56215A /* libPods-MAMLSpringViewEx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 008C868BB9EB4927A823B41A /* libPods-MAMLSpringViewEx.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +72,6 @@
 				C9A516611911DAAA005F198B /* UIKit.framework in Frameworks */,
 				C9A5165D1911DAAA005F198B /* Foundation.framework in Frameworks */,
 				80DF64B425DB4F5BA01A0CC8 /* libPods.a in Frameworks */,
-				D07D0E036D074510AD56215A /* libPods-MAMLSpringViewEx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +463,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MAMLSpringViewEx/MAMLSpringViewEx-Prefix.pch";
 				INFOPLIST_FILE = "MAMLSpringViewEx/MAMLSpringViewEx-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -479,6 +478,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MAMLSpringViewEx/MAMLSpringViewEx-Prefix.pch";
 				INFOPLIST_FILE = "MAMLSpringViewEx/MAMLSpringViewEx-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

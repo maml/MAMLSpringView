@@ -2,4 +2,7 @@ platform :ios, "7.0"
 
 podspec :path => "../MAMLSpringView.podspec"
 
+pod "pop"
+pod "MAMLSpringView", :git => "git@github.com:maml/MAMLSpringView.git"
+
 xcodeproj 'MAMLSpringViewEx/MAMLSpringViewEx.xcodeproj'
