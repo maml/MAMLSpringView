@@ -9,12 +9,14 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A circular view with a label that changes text and color and springs out and in when touched."
   s.description      = <<-DESC
+                       "A circular view with a label that changes text and color and springs out and in when touched."
+                       "A circular view with a label that changes text and color and springs out and in when touched."
                        DESC
   s.homepage         = "https://github.com/maml/MAMLSpringView"
   #s.screenshots      = "www.example.com/screenshots_1"
   s.license          = 'MIT'
   s.author           = { "Matthew Loseke" => "mloseke@gmail.com" }
-  s.source           = { :git => "git@github.com:maml/MAMLSpringView.git", :tag => s.version.to_s }
+  s.source           = { :git => "git@github.com:maml/MAMLSpringView.git", :commit => "5ce51e0" }
   s.social_media_url = 'https://twitter.com/mattloseke'
 
   s.platform     = :ios, '7.0'
