@@ -34,6 +34,24 @@
     [self addSubview:label];
 }
 
+- (void)turnOn
+{
+    if (!ViewStateOn) {
+        [circle setState:CircleStateOn];
+        [label setState:LabelStateOn];
+        state = ViewStateOn;
+    }
+}
+
+- (void)turnOff
+{
+    if (!ViewStateOff) {
+        [circle setState:CircleStateOff];
+        [label setState:LabelStateOff];
+        state = ViewStateOff;
+    }
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self toggleState];

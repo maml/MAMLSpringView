@@ -27,6 +27,9 @@ typedef NS_ENUM(NSInteger, ViewState) {
 
 @property (assign) id<MAMLSpringViewDelegate> delegate;
 
+- (void)turnOn;
+- (void)turnOff;
+
 @end
 
 @protocol MAMLSpringViewDelegate <NSObject>
@@ -34,6 +37,7 @@ typedef NS_ENUM(NSInteger, ViewState) {
 @optional
 
 - (void)springViewStateDidChange:(ViewState)state;
+
 
 @end
 
