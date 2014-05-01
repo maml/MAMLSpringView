@@ -1,18 +1,18 @@
 PODS:
-  - MAMLSpringView (0.1.4):
+  - MAMLSpringView (0.1.7):
     - pop
   - pop (1.0.3)
 
 DEPENDENCIES:
-  - MAMLSpringView (from `git@github.com:maml/MAMLSpringView.git`)
+  - MAMLSpringView (from `../MAMLSpringView.podspec`)
   - pop
 
 EXTERNAL SOURCES:
   MAMLSpringView:
-    :git: git@github.com:maml/MAMLSpringView.git
+    :path: ../MAMLSpringView.podspec
 
 SPEC CHECKSUMS:
-  MAMLSpringView: fde57fc65c68dbc31349026c773c4fd731723d4c
+  MAMLSpringView: 3214752ca58dceed20a70348416cdfa07f7f7632
   pop: 7b5b9e8735d9ea34818c0ceab493a92b5f0259c7
 
 COCOAPODS: 0.32.1
