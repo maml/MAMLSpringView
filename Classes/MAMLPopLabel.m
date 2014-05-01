@@ -30,7 +30,7 @@
         onColor = _onColor;
         offColor = _offColor;
         self.text = offText;
-        self.textColor = [UIColor lightGrayColor];
+        self.textColor = offColor;
         self.font = [UIFont systemFontOfSize:12];
         self.textAlignment = NSTextAlignmentCenter;
         [self addObserver:self forKeyPath:@"state" options:NSKeyValueObservingOptionNew context:Nil];
