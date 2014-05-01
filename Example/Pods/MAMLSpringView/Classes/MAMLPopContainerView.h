@@ -36,3 +36,4 @@ typedef NS_ENUM(NSInteger, ViewState) {
 - (void)springViewStateDidChange:(ViewState)state;
 
 @end
+

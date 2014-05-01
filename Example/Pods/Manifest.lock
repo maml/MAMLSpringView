@@ -1,5 +1,5 @@
 PODS:
-  - MAMLSpringView (0.1.0):
+  - MAMLSpringView (0.1.4):
     - pop
   - pop (1.0.3)
 
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
     :git: git@github.com:maml/MAMLSpringView.git
 
 SPEC CHECKSUMS:
-  MAMLSpringView: 4848aad19993763a20f36a50246cdfd8afde7620
+  MAMLSpringView: fde57fc65c68dbc31349026c773c4fd731723d4c
   pop: 7b5b9e8735d9ea34818c0ceab493a92b5f0259c7
 
 COCOAPODS: 0.32.1
