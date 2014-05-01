@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #s.screenshots      = "www.example.com/screenshots_1"
   s.license          = 'MIT'
   s.author           = { "Matthew Loseke" => "mloseke@gmail.com" }
-  s.source           = { :git => "git@github.com:maml/MAMLSpringView.git", :commit => "5ce51e0" }
+  s.source           = { :git => "git@github.com:maml/MAMLSpringView.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/mattloseke'
 
   s.platform     = :ios, '7.0'
