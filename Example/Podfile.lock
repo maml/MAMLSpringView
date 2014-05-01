@@ -1,17 +1,10 @@
 PODS:
-  - MAMLSpringView (0.1.0)
   - pop (1.0.3)
 
 DEPENDENCIES:
-  - MAMLSpringView (from `../`)
   - pop
 
-EXTERNAL SOURCES:
-  MAMLSpringView:
-    :path: ../
-
 SPEC CHECKSUMS:
-  MAMLSpringView: 93f037c98b0c694ea789075d4d0bfb6aa22426c5
   pop: 7b5b9e8735d9ea34818c0ceab493a92b5f0259c7
 
 COCOAPODS: 0.32.1
