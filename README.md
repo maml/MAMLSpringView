@@ -3,8 +3,6 @@
 [![Version](http://cocoapod-badges.herokuapp.com/v/MAMLSpringView/badge.png)](http://cocoadocs.org/docsets/MAMLSpringView)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/MAMLSpringView/badge.png)](http://cocoadocs.org/docsets/MAMLSpringView)
 
-![MAMLSpringView gif](mamlspringview-example.gif "MAMLSpringView gif")
-
 ## Usage
 
 To run the example project; clone the repo, and run `pod install` from the Example directory first.
@@ -38,3 +36,4 @@ Matthew Loseke, mloseke@gmail.com
 
 MAMLSpringView is available under the MIT license. See the LICENSE file for more info.
 
+![MAMLSpringView gif](mamlspringview-example.gif "MAMLSpringView gif")
