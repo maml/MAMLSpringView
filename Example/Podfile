@@ -1,7 +1,15 @@
+xcodeproj "MAMLSpringViewEx/MAMLSpringViewEx.xcodeproj"
+
 pod "MAMLSpringView", :path => "../"
 
-target "Demo" do
+target "MAMLSpringViewEx" do
+
+pod "pop"
+
 end
 
-target "DemoTests" do
+target "MAMLSpringViewExTests" do
+
+pod "pop"
+
 end
