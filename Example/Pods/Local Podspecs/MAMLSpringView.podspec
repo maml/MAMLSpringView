@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "MAMLSpringView"
-  s.version          = "0.1.7"
+  s.version          = "0.1.9"
   s.summary          = "A circular view with a label that changes text and color and springs out and in when touched."
   s.description      = <<-DESC
                        "A circular view with a label that changes text and color and springs out and in when touched."
