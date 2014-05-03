@@ -47,35 +47,29 @@
         shapeLayer.path = path.CGPath;
         [self.layer addSublayer:shapeLayer];
         
-        [self addObserver:self forKeyPath:@"state" options:NSKeyValueObservingOptionNew context:Nil];
-        
         needToPopIn = YES;
         needToRemoveAnimation = NO;
     }
     return self;
 }
 
-#pragma mark KVO
+#pragma mark - Setter
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    if ([keyPath isEqualToString:@"state"]) {
-        CircleState newState = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
-        [self handleChangeToState:newState];
-    }
-}
-
-- (void)handleChangeToState:(CircleState)_state
+- (void)setState:(BOOL)_state animated:(BOOL)animated
 {
     switch (_state) {
         case CircleStateOn:
             shapeLayer.strokeColor = [onColor CGColor];
-            [self popOut];
+            if (animated) {
+                [self popOut];
+            }
             break;
             
         default:
             shapeLayer.strokeColor = [offColor CGColor];
-            [self popOut];
+            if (animated) {
+                [self popOut];
+            }
             break;
     }
 }

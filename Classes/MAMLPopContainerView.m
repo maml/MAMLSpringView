@@ -34,19 +34,19 @@
     [self addSubview:label];
 }
 
-- (void)turnOn
+- (void)turnOn:(BOOL)animated
 {
-    if (!ViewStateOn) {
-        [circle setState:CircleStateOn];
+    if (!ViewStateOn == self.state) {
+        [circle setState:CircleStateOn animated:animated];
         [label setState:LabelStateOn];
         state = ViewStateOn;
     }
 }
 
-- (void)turnOff
+- (void)turnOff:(BOOL)animated
 {
-    if (!ViewStateOff) {
-        [circle setState:CircleStateOff];
+    if (!ViewStateOff == self.state) {
+        [circle setState:CircleStateOff animated:animated];
         [label setState:LabelStateOff];
         state = ViewStateOff;
     }
@@ -60,11 +60,11 @@
 - (void)toggleState
 {
     if (state == ViewStateOff) {
-        [circle setState:CircleStateOn];
+        [circle setState:CircleStateOn animated:YES];
         [label setState:LabelStateOn];
         state = ViewStateOn;
     } else {
-        [circle setState:CircleStateOff];
+        [circle setState:CircleStateOff animated:YES];
         [label setState:LabelStateOff];
         state = ViewStateOff;
     }
