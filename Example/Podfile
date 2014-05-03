@@ -5,7 +5,7 @@ podspec :path => "../MAMLSpringView.podspec"
 pod "pop"
 
 # pull pod from git
-#pod "MAMLSpringView", :git => "git@github.com:maml/MAMLSpringView.git"
+# pod "MAMLSpringView", :git => "git@github.com:maml/MAMLSpringView.git"
 
 # work with local version of pod
 pod "MAMLSpringView", :path => "../MAMLSpringView.podspec"
