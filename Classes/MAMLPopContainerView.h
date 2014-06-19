@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, ViewState) {
 @optional
 
 - (void)springViewStateDidChange:(ViewState)state;
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 
 @end
 
