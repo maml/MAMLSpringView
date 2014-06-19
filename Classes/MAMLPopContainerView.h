@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, ViewState) {
 
 @property (assign) id<MAMLSpringViewDelegate> delegate;
 
+- (void)toggleState;
 - (void)turnOn:(BOOL)animated;
 - (void)turnOff:(BOOL)animated;
 
