@@ -54,7 +54,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self toggleState];
+    [delegate touchesBegan:touches withEvent:event];
 }
 
 - (void)toggleState
