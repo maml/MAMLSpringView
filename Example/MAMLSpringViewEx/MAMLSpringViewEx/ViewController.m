@@ -8,12 +8,18 @@
 
 #import "ViewController.h"
 
+@interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet MAMLPopContainerView *springView;
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.springView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -21,5 +27,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)springViewWasTouched
+{
+    [self.springView toggleState];
+}
+
+- (void)springViewStateDidChange:(ViewState)state
+{}
 
 @end

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MAMLSpringView/MAMLPopContainerView.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MAMLSpringViewDelegate>
 
 @end
