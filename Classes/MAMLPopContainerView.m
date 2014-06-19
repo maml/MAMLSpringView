@@ -54,7 +54,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [delegate touchesBegan:touches withEvent:event];
+    [delegate springViewWasTouched];
 }
 
 - (void)toggleState

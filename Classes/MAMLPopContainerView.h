@@ -35,10 +35,8 @@ typedef NS_ENUM(NSInteger, ViewState) {
 
 @protocol MAMLSpringViewDelegate <NSObject>
 
-@optional
-
 - (void)springViewStateDidChange:(ViewState)state;
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (void)springViewWasTouched;
 
 @end
 
