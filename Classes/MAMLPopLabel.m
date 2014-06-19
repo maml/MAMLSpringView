@@ -38,6 +38,11 @@
     return self;
 }
 
+- (void)dealloc
+{
+    [self removeObserver:self forKeyPath:@"state"];
+}
+
 #pragma mark KVO
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
